@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practice</title>
+</head>
+
+<body>
+    <center>
+        <h1>Forms Practice</h1>
+
+        <!--<form action=""> makes buttons'active'-->
+        <form action="/practice">
+            <label for="username">Enter Username:</label>
+            <input id="Enter username" type="text" placeholder="username">
+            </p>
+            <p>
+                <label for="Password"> Enter Password:</label>
+                <input type="Enter password" placeholder="password" id="password">
+            </p>
+            <p>
+                <label for="Date of Birth">Enter Birthdate</label>
+                <input type="date" name="date">
+            </p>
+
+            <p>
+                <button>Submit</button>
+            </p>
+
+        </form>
+        <br>
+
+        <!--Button Form Attribute Practice-->
+
+        <form action="https://www.google.com/search">
+            <input type="text" name="q">
+            <button>Search Google</button>
+        </form>
+        <br>
+        <form action="https://www.youtube.com/search">
+            <input type="Text" name="q">
+            <button>Search Youtube</button>
+        </form>
+        <br>
+        <form action="https://www.pinterest.com/search">
+            <input type="text" name="q">
+            <button>Search Pinterest</button>
+        </form>
+
+        <!--Checkbox Practice-->
+
+        <h2>Checkbox Practice</h2>
+        <form action="/yes">
+            <input type="checkbox" name="Yes" id="yes">
+            <label for="Yes">Yes</label>
+
+
+            <!--Radio Button Attribute Practice-->
+
+
+            <h2>Radio Button Practice</h2>
+            <!--'name' value must be the same in order to select only one radio button-->
+            <p>
+                <input type="radio" name="rating" id="Good">
+                <label for="Good">Good</label>
+
+                <input type="radio" name="rating" id="Better">
+                <label for="Better">Better</label>
+
+                <input type="radio" name="rating" id="Best">
+                <label for="Best">Best</label>
+            </p>
+        </form>
+
+
+        <!--Select Dropdown Menu Attribute Practice-->
+        <br>
+        <h2> Dropdown Menu Practice</h2>
+        <p>
+            <label for="seasons"><b>Select a Season</b></label>
+            <select name="seaons" id="seasons">
+                <option value="Spring">Spring</option>
+                <option value="Summer">Summer</option>
+                <option value="Autumn">Autumn</option>
+                <option value="Winter">Winter</option>
+            </select>
+        </p>
+        <br>
+        <!--Range Attribute Practice-->
+        <h2>Range Bar Practice</h2>
+        <p>
+        <form action="Practice Range">
+
+            <label for="Temp">Temperature</label>
+            <br>
+            <input type="range" id="Temp" min="1" max="10" name="temp_gauge" </p>
+            <br>
+            <button>Submit</button>
+            <br>
+            <br>
+
+            <!--TextArea Practice-->
+            <p>
+                <label for="requests">List any Special Requests</label>
+                <br>
+                <textarea id="requests" rows="10" cols="40" name="Special Requests"></textarea>
+            </p>
+
+            <!--Validation Demo-->
+            <!--can add required to require user to enter data before submitting-->
+            <h2>Validations Demo</h2>
+            <form action="/demo">
+                <label for="first">First Name</label>
+                <input type="text" name="first" id="first" required>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" minlength="3" maxlength="20">
+                <button>Submit</button>
+            </form>
+
+    </center>
+
+
+
+
+</body>
+
+</html>
