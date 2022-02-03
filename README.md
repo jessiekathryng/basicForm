@@ -1,2 +1,2 @@
 # basicForm
-This is a basic Sbmission Form built with HTML
+This is a basic Submission Form built with HTML
